@@ -2,5 +2,5 @@
 	define('HOST','localhost');
 	define('NAME','zhang');
 	define('USERNAME','root');
-	define('PASSWORD','123456');
+	define('PASSWORD','wow82714');
 ?>

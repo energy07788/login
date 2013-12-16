@@ -1,7 +1,8 @@
 <?php
 session_start();
-unset($_SESSION['username']);
-unset($_SESSION['password']);
+unset($_SESSION['admin']);
+//unset($_SESSION['username']);
+//unset($_SESSION['password']);
 setcookie("username","",time()-3600);
 setcookie("password","",time()-3600);
 header('Location:index1.php');

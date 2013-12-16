@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<?
+<?php
 require_once('connect.php');
 require_once('logincheck.php');
 require_once('timeout.php');
 ?>
-
 <html>
 	<head>
 		<html lang="zh-tw">

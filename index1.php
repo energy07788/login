@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if(isset($_SESSION['admin']))
+		header("Location: insert.php");
+?>
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>

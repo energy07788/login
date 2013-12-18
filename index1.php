@@ -2,7 +2,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION['admin']))
-		header("Location: insert.php");
+		header("Location: main.php");
 ?>
 <html>
 <head>

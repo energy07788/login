@@ -1,5 +1,6 @@
 ﻿<!--PDO連線到資料庫-->
 <?php 
+	ini_set('display_errors',1);
 	require_once('define.php');
 	try{
 		$db = new PDO(

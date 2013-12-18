@@ -1,6 +1,5 @@
  <?php
-if($_COOKIE['username']==""&&$_COOKIE['password']==""){
+if(!isset($_COOKIE['username'])){
 	header('Location:index1.php');
-	exit();
 }
 ?>

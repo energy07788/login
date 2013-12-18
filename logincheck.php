@@ -1,12 +1,11 @@
 <?php
-$admin = false;
-session_start(); 
-if (isset($_SESSION['admin']) && $_SESSION['admin'] == true && isset($_COOKIE['username']) &&  isset($_COOKIE['password'])) {
-
-} 
-else {
-	// 驗證失敗，將 $_SESSION["admin"] 置為 false
-	$_SESSION["admin"] = false; 
-	header('Location:index1.php');
-	}
+session_start();
+if (isset($_SESSION['admin']) && isset($_COOKIE['PHPSESSID']) && strcasecmp($_COOKIE['PHPSESSID'], session_id() )==0) {
+	$_SESSION['username']=$id;
+	setcookie("username",$id,time()+1800);
+	header('Location: insert.php');
+}
+if ( !isset($_SESSION['username']) ) {
+	header('Location: index1.php');
+}
 ?>

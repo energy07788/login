@@ -1,6 +1,6 @@
 <?php
-	define('HOST','localhost');
-	define('NAME','zhang');
-	define('USERNAME','root');
-	define('PASSWORD','wow82714');
+	define('HOST','apps.csie.stu.edu.tw');
+	define('NAME','test_zhang');
+	define('USERNAME','energy07788');
+	define('PASSWORD','tjcmJhXrPCcDPEnb');
 ?>

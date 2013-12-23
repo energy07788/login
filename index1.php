@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 	session_start();
-	if(isset($_SESSION['admin']))
+	if(isset($_SESSION['username']))
 		header("Location: main.php");
 ?>
 <html>

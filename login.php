@@ -8,6 +8,8 @@ $st=$db->query($sql);
 $row=$st->fetch(PDO::FETCH_NUM);
 if($id!=null && $pw!=null && $row[0]==$id && $row[1]==$pw){
 	$_SESSION['admin'] = session_id();
+	$_SESSION['username']=$id;
+	setcookie("username",$id,time()+1800);
 	echo "登入成功";
 	echo '<meta http-equiv=REFRESH CONTENT=2;url=main.php>';
 	//header('Location:insert.php');

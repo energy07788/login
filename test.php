@@ -5,3 +5,8 @@ echo $_SESSION['admin'];
 echo "\n";
 echo session_id();
 ?>
+
+
+if ( !isset($_SESSION['username']) ) {
+	header('Location: index1.php');
+}

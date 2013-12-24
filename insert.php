@@ -6,14 +6,13 @@ require_once('timeout.php');
 ?>
 <html>
 	<head>
-		<html lang="zh-tw">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<title>申請頁面</title>
 	</head>
 	<body>
-	<form method="post" action="logout.php" align="right">
-	<input type="submit" value="登出">
-	</form>
+		<form method="post" action="logout.php" align="right">
+			<input type="submit" value="登出">
+		</form>
 		<form  name="form" method="post" action="finish.php" >
 			申請人：<input type="text" name="applicant"><br><br>
 			使用人：<input type="text" name="user">*<br><br>

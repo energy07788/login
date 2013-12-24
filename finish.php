@@ -1,5 +1,12 @@
 <!--傳送資料到資料庫-->
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+	</body>
+</html>
 <?php
 	require_once('connect.php');
 	$applicant= $_POST['applicant'];

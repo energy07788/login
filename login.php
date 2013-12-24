@@ -1,5 +1,6 @@
 <?php
 session_start();
+//include_once可以避免重複引入,引不到檔案會出現錯誤息，但程式不會停止
 include_once("connect.php");
 $id=$_POST['id'];
 $pw=$_POST['pw'];
@@ -10,15 +11,17 @@ if($id!=null && $pw!=null && $row[0]==$id && $row[1]==$pw){
 	$_SESSION['admin'] = session_id();
 	$_SESSION['username']=$id;
 	setcookie("username",$id,time()+1800);
-	echo "登入成功";
-	echo '<meta http-equiv=REFRESH CONTENT=2;url=main.php>';
-	//header('Location:insert.php');
-	exit();
-}
-else{
-	echo "登入失敗";
-	echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
-	//header('Location:index1.php');
-	exit();
-}
+
+	echo "<script language=javascript>
+	     alert('登入成功!');
+	     window:location.href='main.php';
+	     </script>";
+	}
+	else{
+		
+	echo "<script language=javascript>
+	     alert('登入失敗!');
+	     window:location.href='index1.php';
+	     </script>";
+	}
 ?>

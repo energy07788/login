@@ -1,4 +1,5 @@
 <?php
+//require_once可以避免重複引入,引不到檔案會出現錯誤息程式會停止
 require_once('connect.php');
 require_once('logincheck.php');
 require_once('timeout.php');
@@ -7,16 +8,16 @@ $sth=$db->prepare("select *from ip");
 	$sth->execute();
 ?>
 <html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>IP申請網站</title>
-</head>
-<body>
-<form name="form1" method="post">
-	<input type="button" onclick="window:location.href='insert.php'"value="申請"/>
-	<input type="button" onclick="window:location.href='logout.php'"value="登出"/>
-</form>
-<table border="1">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>IP申請網站</title>
+	</head>
+	<body>
+		<form name="form1" method="post">
+			<input type="button" onclick="window:location.href='insert.php'"value="申請"/>
+			<input type="button" onclick="window:location.href='logout.php'"value="登出"/>
+		</form>
+		<table border="1">
 			<tr>
 				<!--欄位名稱-->
 				<td> 申請人 </td>
@@ -50,5 +51,5 @@ $sth=$db->prepare("select *from ip");
 				?>
 			</tr>
 		</table>
-</body>
+	</body>
 </html>

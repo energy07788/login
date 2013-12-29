@@ -9,7 +9,7 @@ if($db ->query($sql)){
 
 	echo "<script language=javascript>
 	     alert('註冊成功!');
-	     window:location.href='index1.php';
+	     window:location.href='index.php';
 	     </script>";
 	}
 }
@@ -17,7 +17,7 @@ else{
 	
 	echo "<script language=javascript>
 	     alert('註冊失敗!');
-	     window:location.href='index1.php';
+	     window:location.href='index.php';
 	     </script>";
 }
 ?>

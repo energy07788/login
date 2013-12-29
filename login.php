@@ -21,7 +21,7 @@ if($id!=null && $pw!=null && $row[0]==$id && $row[1]==$pw){
 		
 	echo "<script language=javascript>
 	     alert('登入失敗!');
-	     window:location.href='index1.php';
+	     window:location.href='index.php';
 	     </script>";
 	}
 ?>

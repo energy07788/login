@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php
-	session_start();
+<?php session_start();
 	//判斷使用者有無登入
 	if(isset($_SESSION['username']))
 		header("Location: main.php");
